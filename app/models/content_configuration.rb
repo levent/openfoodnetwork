@@ -31,6 +31,10 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :group_signup_case_studies_html, :text, default: "(TODO: Case studies)"
   preference :group_signup_detail_html, :text, default: "(TODO: Detail)"
 
+  # Enterprise registration wizard
+  preference :enterprise_terms_enabled, :boolean, default: false
+  preference :enterprise_terms_body, :text, default: ""
+
   # Footer
   preference :footer_logo, :file
   has_attached_file :footer_logo, default_url: "/assets/ofn-logo-footer.png"
